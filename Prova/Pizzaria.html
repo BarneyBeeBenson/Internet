@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        .container{
+            min-height: 100vh;
+            min-width: 100vw;
+            display:grid;
+           grid-template-areas:
+           "header header header header header"
+           "left   banner banner banner banner"
+           "left   main   main   main   main"
+           "left   main   main   main   main"
+           "left   main   main   main   main"
+           "left   main   main   main   main"
+           "left   main   main   main   main"
+           "left   main   main   main   main"
+           "footer footer footer footer footer"
+        }
+        @media(max-width:500px){
+            .tudo{
+                display:grid;
+                min-height: 100vh;
+                min-width: 100vw;
+                grid-template-areas:
+                "header header"
+                "left   banner"
+                "left   main"
+                "left   main"
+                "left   main"
+                "left   main"
+                "left   main"
+                "left   main"
+                "footer footer";
+            }
+        }
+        #box1{grid-area: header; background-color: orange;}
+        #box3{grid-area: main;background-color: blue;}
+        #box2{grid-area: banner;background-color:red}
+        #box4{grid-area: right;background-color:blueviolet}
+        #box5{grid-area: left;background-color:aqua}
+      
+        #box7{grid-area: footer;background-color: brown;}
+
+        .chat{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            right: 0%;
+            bottom: 0%;
+            height: 40vh;
+            width: 16vw;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="tudo">
+
+        <div class="container">
+            <div class="campo" id="box1" border:0px solid black>
+                <b>THe Proprio Pizza Chapéu</b>
+            </div>
+
+            <div class="campo" id="box2">
+                <strong>Aqui só tem Pizza</strong>
+            </div>
+
+            <div class="campo" id="box3">
+                <b>Imagine Dragons... não, imagine pizzas aqui</b>
+            </div>
+
+            <div class="campo" id="box4">
+                <b>Digite sua Mensagem</b>
+            </div>
+
+            <div class="campo" id="box5">
+                <ul>
+                    <li>Pizzas:</li>
+                    <li>Pizza</li>
+                    <li>Pizza de pizza</li>
+                    <li>Pizzas de pizza de pizza</li>
+
+                </ul>
+            </div>
+        
+            <div class="campo" id="box7"><b>Eu não consegui pensar em mais nada</b></div>
+
+            <div class="chat">
+            
+            </div>
+
+
+    </div>
+
+    </div>
+</body>
+</html>

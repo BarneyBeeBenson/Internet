@@ -1,0 +1,19 @@
+1-
+O cliente clica no link do site, então o servidor pede para algum protocolo, mostrar o endereço real do site (onde está hospedado).
+É requerido alguma coisa para autenticar, e daí o site carrega.
+
+2- Não, ao contrário de linguagens como Java, que podem ser usadas para desenvolver aplicação tanto mobile uanto desktop,
+ html é usada somente para um princípio, para desenvolver aplicações web. 
+Também a frase possui uma afurmação incorreta, ao agrupar css com java, pois css é uma linguagem feita para desing de páginas na web
+
+3a) 1 colocando a tag "style" no head. colocando o "style" dentro de um elemento". Importando o style sheet como uma extensão .css
+
+b) Seletores funcionam por meio de caracsterísticas de elementos, como o exemplo de "id" "class", ou tipo de de elemento (como um elemento "div", ou "h1"). 
+Diferente seletores tem diferentes níveis prioridades. 
+Quando mais de um seletor seria aplicado a um elemento, sobrepõe-se o com maior nível de prioridade, no caso seria o por "id", se houvesse.
+
+c) É possível posiscionar elementos de algumas formas, em especial com CSS. As principais são, ou alterando a posição dos elementos com o próprio CSS 
+(algo como "position: fixed || left: 50%"), ou utilizando um de seus muitos layouts (como grid ou flex).
+
+
+

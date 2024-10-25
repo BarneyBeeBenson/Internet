@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{border:1px solid black;}
+        
+        .container1{
+            display:grid;
+            height: 30vh;
+            width: 30vw;
+            transition-duration: 1s;
+           grid-template-areas:
+           "franca"
+           "franca2"
+           "franca3"
+           ;
+        
+        }
+
+        .container2{
+            display:grid;
+            height: 30vh;
+            width: 30vw;
+            transition-duration: 1s;
+           grid-template-areas:
+           "italia italia2 italia3"
+           "italia italia2 italia3"
+           "italia italia2 italia3"
+           ;
+        
+        }
+
+        .japan{
+            display: flex;
+            height: 30vh;
+            width: 30vw;
+            transition-duration: 1s;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            
+        }
+        .bola{
+            min-height: 5vh;
+            min-width: 5vw;
+            max-width: 5vw;
+            max-height: 5vh;
+            background-color: red;
+            border-radius: 50%;
+
+        }
+
+        .container1:hover{
+            width: 50vw;
+            height: 50vh;
+            #f2{color: black;}
+        }
+
+        .container2:hover{
+            width: 50vw;
+            height: 50vh;
+            #i2{color: black;}
+
+        }
+        .japan:hover{
+            width: 50vw;
+            height: 50vh;
+            color: black;
+        }
+
+
+        @media(max-width:400px){
+            .container{
+                display:grid;
+                min-height: 100vh;
+                min-width: 100vw;
+                grid-template-areas:
+                "container1"
+                "container2"
+                "japan";
+            }
+            .container1{grid-area: container1;}
+            .container2{grid-area: container2;}
+            .japan{grid-area: japan;}
+
+        }
+        
+        #f1{grid-area: franca; background-color: red;}
+        #f2{grid-area: franca2; background-color: white; color: white;}
+        #f3{grid-area: franca3; background-color:blue;}
+
+        #i1{grid-area: italia; background-color: green;}
+        #i2{grid-area: italia2; background-color:white; color: white;}
+        #i3{grid-area: italia3; background-color: red;}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+        <div class="container1">
+        
+            <div id="f1"></div>
+            <div id="f2">Países Médios</div>
+            <div id="f3"></div>
+       
+        </div>
+
+        <div class="container2">  
+
+            <div id="i1"></div>
+            <div id="i2">Italia</div>
+            <div id="i3"></div>
+
+        </div>
+
+        <div class="japan"> Japao
+            <div class="bola"> </div>
+        </div>
+
+    </div>
+        
+
+   
+    
+</body>
+</html>
