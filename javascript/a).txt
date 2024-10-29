@@ -1,0 +1,3 @@
+a)
+
+Segundo exemplo dá erro por conta da ordem de declaração pois está sendo declarado no head.O bgl tá vazio quando o script é declarado
