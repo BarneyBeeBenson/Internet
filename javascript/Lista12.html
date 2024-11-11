@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="n1"> Numero</label>
+    <input type="text" id="n1">
+
+    <label for="n2"> Oto Numero</label>
+    <input type="text" id="n2">
+
+    <button id="btnsoma">Soma </button>
+
+    <p id="resultado"> </p>
+
+    <script>
+        let btnsoma=document.querySelector("#btnsoma");
+
+        btnsoma.addEventListener("click, somam");
+
+        function somam(){
+
+            n1=Number.parseInt(document.getElementById("n1").value);
+            n2=Number.parseInt(document.getElementById("n2").value);
+
+            console.log(n1+n2);
+            
+            alert(n1 + n2);
+
+            document.getElementById("resultado").innerText= n1+n2;
+
+        }
+        
+    </script>
+</body>
+</html>
