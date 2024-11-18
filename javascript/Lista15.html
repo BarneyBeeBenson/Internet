@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            min-height: 100lvh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <label for="input_min"> Min</label>
+    <input id="input_min" type="number">
+
+    <label for="input_max"> Max</label>
+    <input id="input_max" type="number" >   
+
+    <button>Aleatorio </button>
+    <p id="numSorteado">o</p>
+
+
+    <script>
+        let resul = document.querySelector("#numSorteado");
+        let min=document.querySelector("input_min");
+        let max=document.querySelector("input_max");
+
+        document.querySelector("button").addEventListener("click", ()=>{
+
+            minimo = Number.parseFloat(min.value);
+            maximo = Number.parseFloat(max.value);
+
+            resul.innerHTML = Math.round(Math.random() * (maximo-minimo)+minimo +1);
+        })
+    
+    </script>
+</body>
+</html>

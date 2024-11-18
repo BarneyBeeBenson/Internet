@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            min-height: 100px;
+            min-width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            min-height: 100px;
+            min-width: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <button class="btn"> 0 </button>
+
+    </div>
+
+    <script>
+
+        let num = 0;
+        let button = document.querySelector(".btn").addEventListener("click", ()=> {
+        num = num +1;
+        btn.innertext = num;})
+        
+    </script>
+    
+</body>
+</html>

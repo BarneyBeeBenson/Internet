@@ -14,11 +14,16 @@
 
 
     <script>
-        let inputTxt = document.querySelector("#txt");
+        let inputTxt = document.querySelector("#text");
         let divResultado= document.querySelector("#paragrafos");
-        document.querySelector("button").addEventListener("click", copiarParagrafo);
+
+        let button = document.querySelector("button").addEventListener("click",()=>{let str = inputTxt.value;
+            let meup = document.createElement("p");
+            meup.innerHTML= str;
+            paragrafos.appendChild(meup);});
+
         function copiarParagrafo(){
-            divResultado.innerHTML += '<p> $ {inputTxt.value} </p>'; 
+            //divResultado.innerHTML += `<p> ${inputTxt.value} </p>`; 
         }
 
 
