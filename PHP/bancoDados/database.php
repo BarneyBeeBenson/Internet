@@ -21,5 +21,5 @@
         }
     }
     chekConexao(conecta());
-    var_dump(conecta());
+    
 ?>
