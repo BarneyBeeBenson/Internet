@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uno</title>
+    <style>
+        *{border:1px solid black;}
+        
+        .container{
+            min-height: 100vh;
+            display:grid;
+           grid-template-areas:
+           "header header  header  header"
+           "nav    contenta contenta contenta"
+           "nav    contenta contenta contenta"
+           "nav    footer  footer  footer"
+           ;
+        }
+ 
+        #box1{grid-area: header; background-color:crimson;}
+        #box3{grid-area: contenta; border: 0px solid rgb(42, 5, 252); background-color: chocolate; }
+        #box2{grid-area: nav; background-color:chartreuse}
+        #box5{grid-area: footer; background-color:cadetblue}
+        #p1{border: 0px solid blue}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="campo" id="box1">|Header</div>
+        <div class="campo" id="box2">Nav</div>
+        <div class="campo" id="box3">
+            <p id="p1">Content</p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Ducimus optio cum nesciunt est at nostrum neque eius ipsam officia minus magnam beatae, nemo doloribus. 
+            Repellendus recusandae voluptas mollitia exercitationem porro.
+        </div>
+        <div class="campo" id="box5">Footer</div>
+    </div>
+    
+</body>
+</html>

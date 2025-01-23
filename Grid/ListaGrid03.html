@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres</title>
+    <style>
+        
+        div{
+            border: 1px solid black;
+        }
+        .container{
+            min-height: 100vh;
+            min-width: 100vw;
+            display:grid;
+           grid-template-areas:
+           "header header header header header"
+           "left   banner banner banner right"
+           "left   main   main   main   right"
+           "left   main   main   main   right"
+           "left   main   main   main   right"
+           "left   main   main   main   right"
+           "left   main   main   main   right"
+           "left   low    low    low    right"
+           "footer footer footer footer footer"
+           ;
+        }
+        @media(min-width:430px){
+        @media (min-height:870px){
+            
+            .container{
+                display:grid;
+                min-width: 100vw;
+                min-height: 100vh;
+                grid-template-areas:
+                "header"
+                "banner"
+                "left"
+                "main"
+                "main"
+                "main"
+                "main"
+                "main"
+                "main"
+                "main"
+                "right"
+                "low"
+                "footer"
+            }
+        }
+        }
+        #box1{grid-area: header; background-color: orange;}
+        #box3{grid-area: main; 
+        width: 100%;
+        height: 100%; background-color: blue;}
+        #box2{grid-area: banner; background-color: red;}
+        #box4{grid-area: right;background-color: orange;}
+        #box5{grid-area: left;background-color: green;}
+        #box6{grid-area: low;background-color: green;}
+        #box7{grid-area: footer;background-color: blue;}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="campo" id="box1" font-color: red>
+            <b>Header</b>
+        </div>
+
+        <div class="campo" id="box2">
+            <strong>Banner</strong>
+        </div>
+
+        <div class="campo" id="box3">
+            <b>Main Content</b>
+        </div>
+
+        <div class="campo" id="box4">
+            <b>Right Content</b>
+        </div>
+
+        <div class="campo" id="box5">
+            <b>left Content</b>
+        </div>
+
+        <div class="campo" id="box6">
+            <b>Low Content</b>
+        </div>
+        
+        <div class="campo" id="box7"><b>Footer</b></div>
+    </div>
+    
+</body>
+</html>

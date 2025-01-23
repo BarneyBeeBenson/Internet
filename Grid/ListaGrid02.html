@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dos</title>
+    <style>
+        *{margin: 0x;padding: 0px;}
+        
+        #mae{
+            min-height: 100vh;
+            min-width: 100vw;
+            display: grid;
+            grid-template-areas: 
+            "a  a  .   .  b"
+            "c  d  d  d d"
+            "c  d  d  d d"
+            ;
+        }
+        #a{grid-area: a; background-color: black; border: 5px solid white; color: white;}
+        #b{grid-area: b; background-color: black; border: 6px solid white; color: white;}
+        #c{grid-area: c; background-color: black; border: 2px solid white; color: white;}
+        #d{
+            display: grid;
+            grid-template-areas: 
+            "e  f  f   g "
+            "m  i  i  j "
+            ;
+            grid-area: d;
+            background-color: black;
+
+        #e{grid-area: e; background-color: grey; border: 5px solid black;}
+        #f{grid-area: f; background-color: grey; border: 5px solid black}
+        #g{grid-area: g; background-color: grey; border: 5px solid black}
+        #m{grid-area: m; background-color: grey; border: 5px solid black}
+        #i{grid-area: i; background-color: grey; border: 5px solid black}
+        #j{grid-area: j; background-color: grey; border: 5px solid black}
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="mae">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">C</div>
+        <div id="d">
+            <div id="e">E</div>
+            <div id="f">F</div>
+            <div id="g">G</div>
+            <div id="m">H</div>
+            <div id="i">I</div>
+            <div id="j">J</div>
+        </div>
+    </div>
+</body>
+</html>

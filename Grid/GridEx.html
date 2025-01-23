@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{border:1px solid black;}
+        
+        .container{
+            min-height: 100vh;
+            display:grid;
+           grid-template-areas:
+           "header header header header"
+           "main   main   .      sidebar"
+           "footer footer footer footer"
+        }
+        @media(max-width:500px){
+            .container{
+                display:grid;
+                min-height: 100vh;
+                grid-template-areas:
+                "header header"
+                "main   sidebar"
+                "footer footer";
+            }
+        }
+        #box1{grid-area: header;}
+        #box3{grid-area: main;}
+        #box2{grid-area: sidebar;}
+        #box5{grid-area: footer;}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="campo" id="box1">|Um</div>
+        <div class="campo" id="box2">Dois</div>
+        <div class="campo" id="box3">Três</div>
+        <div class="campo" id="box5">Cinco</div>
+    </div>
+    
+</body>
+</html>
