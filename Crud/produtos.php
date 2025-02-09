@@ -5,7 +5,7 @@
             header("location:login.php");
         }
         if(isset($_REQUEST['busca'])){
-            $pesquisa = $_REQUEST['busca'];
+            $busca = $_REQUEST['busca'];
             $produtos = getProduto($busca);
         }else{
             $produtos = getProdutos();
@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuarios</title>
+    <title> Produtos </title>
 
     <style>
         #um{
@@ -51,7 +51,7 @@
         }
 
     </style>
-    
+
 </head>
 <body>
 <div id="um">
@@ -61,7 +61,7 @@
                  <input type="text" name="tipo" value="Salvar" hidden>
                  <input type="submit" value="Salvar">
             </form>
-            <form action="usuarios.php" method="get">
+            <form action="produtos.php" method="get">
                 <input type="text" name="busca" id="busca">
                 <input type="submit" value="Buscar">
             </form>
