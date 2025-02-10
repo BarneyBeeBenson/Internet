@@ -36,7 +36,7 @@
     function update($valor,$quantidade,$nome,$id){
         $db = conecta();
 
-        $sql = "update usuario set valor=?,quantidade=?,nome=? where idproduto = ?";
+        $sql = "update produto set valor=?,quantidade=?,nome=? where idproduto = ?";
 
         $stmt = $db ->prepare($sql);
         $stmt->bindValue(1,$valor);
@@ -49,7 +49,7 @@
     function delete($id){
         $db = conecta();
 
-        $sql = "delete from usuario where idproduto = ?";
+        $sql = "delete from produto where idproduto = ?";
         $stmt = $db ->prepare($sql);
         $stmt->bindValue(1,$id);
         $stmt->execute();
@@ -81,8 +81,8 @@
         $stmt = $db->prepare($sql);
         $stmt->bindValue(1,$id);
         $stmt->execute();
-        $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
-        return $usuario;
+        $produto = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $produto;
     }
 
 
