@@ -58,8 +58,8 @@
         <fieldset>
             <a href="fechar.php" id="fechar"><button id="fechar"> Fechar </button></a>
             <form action="save&edit.php" method="post">
-                 <input type="text" name="tipo" value="Salvar" hidden>
-                 <input type="submit" value="Salvar">
+                 <input type="text" name="tipo" value="Save" hidden>
+                 <input type="submit" value="Save">
             </form>
             <form action="produtos.php" method="get">
                 <input type="text" name="busca" id="busca">
