@@ -17,7 +17,7 @@
         if($connId){
             echo "conectado";
         }else{
-            echo "não foi possivel conectar";
+            echo "impossivel conectar";
         }
     }
 
